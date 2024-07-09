@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Adding favicon -->
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/dc71232b/img/favicon_144x144.png"
+      sizes="144x144"
+    />
+    <!-- title of project -->
+    <title>YouTube Subscribers</title>
+    <!-- Adding some CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: rgb(110, 129, 235);
+        background: linear-gradient(
+          126deg,
+          rgb(150, 237, 196) 0%,
+          rgb(236, 117, 139) 53%,
+          rgb(138, 118, 239) 100%
+        );
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.588);
+        border-radius: 10px;
+        padding: 30px;
+        max-width: 800px;
+        text-align: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .text {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 20px 0;
+        font-size: 18px;
+      }
+
+      a.routes {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(166, 7, 39);
+        padding: 8px 12px;
+        border-radius: 5px;
+        border-color: #ccc;
+        transition: background-color 0.3s ease;
+      }
+
+      a.routes:hover {
+        background-color: #0066cc;
+      }
+
+      a.linkedin {
+        color: #0066cc;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      a.linkedin:hover {
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Home page -->
+    <div class="container">
+      <h1 class="text">
+        This Backend Project of Get YouTube Subscribers is developed by
+        <i
+          ><a
+            class="linkedin"
+            href="/"
+            target="_blank"
+            >AKSHAY</a
+          >!</i
+        >
+      </h1>
+      <hr />
+      <h2 class="text">These are the routes in this API</h2>
+      <hr />
+      <p class="text">
+        You can try entering each route using the routes given below
+      </p>
+      <hr />
+      <!-- Some info about routes -->
+      <ul>
+        <li>
+          Add <a class="routes" href="/subscribers">/subscribers</a> in URL :
+          Provides an array of all subscribers in the database.
+        </li>
+
+        <li>
+          Add
+          <a class="routes" href="/subscribers/names">/subscribers/names</a> in
+          URL : Provides an array of subscribers with only two fields name and
+          subscribedChannel
+        </li>
+
+        <li>
+          Add
+          <a class="routes" href="/subscribers/64480ca582addf25ac622b28">/subscribers/id</a
+          >
+          in URL: Provides the details of a subscriber with the given ID.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
